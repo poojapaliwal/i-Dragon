@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.gamecontainer{
+    background-image: url(bg_image.jpg);
+    background-repeat: no-repeat;
+    background-size: 220vh 100vh;
+    height: 100vh;
+    width: 100%;
+}
+.tort{
+    background-image: url(tort.png);
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 123px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 43px; 
+}
+.dragon{
+    background-image: url(pixlr-bg-result.png);
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 186px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 560px; 
+}
