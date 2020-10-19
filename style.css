@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow: hidden;
+}
 .gamecontainer{
     background-image: url(bg_image.jpg);
     background-repeat: no-repeat;
@@ -9,25 +12,28 @@
     height: 100vh;
     width: 100%;
 }
+.gameover{
+    visibility: hidden;
+}
 .tort{
     background-image: url(tort.png);
     background-repeat: no-repeat;
-    width: 234px;
-    height: 123px;
+    width: 290px;
+    height: 150px;
     background-size: cover;
     position: absolute;
     bottom: 0;
-    left: 43px; 
+    left: 143px; 
 }
 .dragon{
     background-image: url(pixlr-bg-result.png);
     background-repeat: no-repeat;
-    width: 234px;
-    height: 186px;
+    width: 420px;
+    height: 290px;
     background-size: cover;
     position: absolute;
     bottom: 0;
-    left: 560px; 
+    left: 1900px; 
 }
 .animatedTort{
     animation: tort 0.8s linear;
@@ -40,7 +46,7 @@
         bottom: 0;
     }
     50%{
-        bottom: 355px;
+        bottom: 755px;
     }
     100%{
         bottom: 0;
@@ -48,9 +54,9 @@
 }
 @keyframes dragon{
     0%{
-        left: 200vw;
+        left: 100vw;
     }
     100%{
-        left: -100vw;
+        left: -10vw;
     }
 } 
