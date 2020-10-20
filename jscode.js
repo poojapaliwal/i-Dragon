@@ -35,11 +35,10 @@ setInterval(() => {
 
     offsetX = Math.abs(tx - dx);
     offsetY = Math.abs(ty - dy);
-    console.log(offsetX + " " + offsetY);
-    if(offsetX<180 && offsetY<93){
+    console.log(offsetX, offsetY);
+    if(offsetX<90 && offsetY<143){
         gameOver.style.visibility = 'visible';
         dragon.classList.remove('dragonAni');
-        tort.classList.remove('animatedTort');
     }
     else if(offsetX<145 && cross){
         score+=1;
