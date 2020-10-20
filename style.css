@@ -39,7 +39,7 @@ body{
     animation: tort 0.8s linear;
 }
 .dragonAni{
-    animation: dragon 5s linear infinite;
+    animation: dragon 10s linear infinite;
 }
 @keyframes tort{
     0%{
