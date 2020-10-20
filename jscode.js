@@ -1,5 +1,11 @@
 score = 0;
 cross= true;
+
+audiogo = new Audio('gameover.mp3');
+audio = new Audio('music.mp3');
+setTimeout(() => {
+    audio.play();
+}, 1000);
 document.onkeydown = function(e){
     console.log("keycode is: ", e.keyCode)
     if(e.keyCode == 38){
@@ -37,8 +43,13 @@ setInterval(() => {
     offsetY = Math.abs(ty - dy);
     console.log(offsetX, offsetY);
     if(offsetX<90 && offsetY<143){
-        gameOver.style.visibility = 'visible';
+        gameOver.innerHTML = 'Game Over-Reload to start again';
         dragon.classList.remove('dragonAni');
+        audiogo.play();
+        setTimeout(() => {
+            audiogo.pause();
+            audio.pause();
+        }, 1000);
     }
     else if(offsetX<145 && cross){
         score+=1;
